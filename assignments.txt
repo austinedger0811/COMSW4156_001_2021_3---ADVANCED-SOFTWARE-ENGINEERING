@@ -22,9 +22,9 @@ Now we need to download some libraries.
 
 In your terminal of choice enter the following commands
 ''' 
-python3 - m pip install flask"
-python3 - m pip install coverage
-python3 - m pip install flake8
+python3 -m pip install flask
+python3 -m pip install coverage
+python3 -m pip install flake8
 '''
 This will install the packages needed to use flask endpoints, check code coverage of unit testing, and help us spot bugs.
 
@@ -37,7 +37,7 @@ begin playing with the hopes that one player wins. The Rules are as follows:
 4. The first person to connect 4 tokens in a row in any direction (vertically, horizontally, or diagonally) wins the game.
 5. If all spaces are used up the game is a draw.
 
-Start by cloning the assignment repository from https://github.com/gailkaiser/COMSW4156_001_2021_3---ADVANCED-SOFTWARE-ENGINEERING
+Start by cloning the assignment repository.
 To open the assignment in Visual Studio Code in the left sidebar there is a button that looks like 2 pages. Click on that button and select "Add Folder"
 then find go to the location where you cloned the repo and click on the "skeleton" folder. The skeleton folder is where the starter code for all of your assignments will be located. Once you open the skeleton folder in visual studio this will allow you to switch through multiple files quickly as the project workspace gets bigger.
 
@@ -118,6 +118,8 @@ This bugs.txt file will identify all of the lines and files that have potential 
 
 Correct implementation will create a blank bugs.txt file since there would be no bugs
 
+Make sure the outputs from the testing and bug checker tools are included in your repository.
+
 Documentation for coverage and flake8 if you are interested:
 https://coverage.readthedocs.io/en/coverage-5.5/ 
 https://flake8.pycqa.org/en/latest/
@@ -136,6 +138,8 @@ remaining_moves which is type INT.
 When a game starts it should pick up from the last time it was played. After every move from either player, the database should update to reflect the newest move.
 
 After implementing the database add a unittest file and run the coverage tests.
+
+Make sure the outputs from the testing and bug checker tools are included in your repository.
 
 sqlite3 documentation:
 https://docs.python.org/3/library/sqlite3.html
